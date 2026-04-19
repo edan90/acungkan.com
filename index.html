@@ -1,39 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="monetag" content="847f5c401ef10843cffc1a52ff08f43b">
-  <title>Nonton Video</title>
-  <style>
-    body { margin:0; background:#000; display:flex; justify-content:center; align-items:center; height:100vh; font-family:Arial }
-    .play-wrap { position:relative; text-align:center; cursor:pointer }
-    .play-wrap img { width:90%; max-width:400px; border-radius:12px }
-    .play-btn { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-size:70px; color:#fff; background:rgba(0,0,0,0.6); border-radius:50%; padding:5px 25px }
-    .judul { color:white; margin-top:15px; font-size:18px }
-    video { position:fixed; top:0; left:0; width:100%; height:100%; object-fit:cover; display:none; background:#000 }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Viral Terbaru</title>
+    <meta name="monetag" content="847f5c401ef10843cffcla52ff08f43b">
+    
+    <!-- Kode MultiTag Monetag sendrow.my.id -->
+    <script src="https://quge5.com/88/tag.min.js" data-zone="231354" async data-cfasync="false"></script>
+    
+    <style>
+        body { margin: 0; padding: 0; background-color: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; flex-direction: column; }
+        video { width: 100%; max-width: 720px; height: auto; }
+        .histats { position: fixed; bottom: 5px; right: 5px; opacity: 0.1; }
+    </style>
 </head>
 <body>
-  <div class="play-wrap" onclick="playVid()">
-    <img src="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg" alt="Thumbnail">
-    <div class="play-btn">▶</div>
-    <div class="judul">Klik untuk Play Video</div>
-  </div>
 
-  <video id="vid" controls playsinline>
-    <source src="video24.mp4" type="video/mp4">
-  </video>
+    <video controls autoplay muted playsinline>
+        <source src="https://videy.co/v/?id=nh77bkAk1" type="video/mp4">
+        Browser lu ga support video tag.
+    </video>
 
-  <!-- KODE MONETAG NANTI TARO DISINI -->
-  
-  <script>
-    function playVid() {
-      let v = document.getElementById('vid');
-      v.style.display = 'block';
-      v.play();
-      if (v.requestFullscreen) v.requestFullscreen();
-      else if (v.webkitRequestFullscreen) v.webkitRequestFullscreen();
-    }
-  </script>
+    <!-- Kode Popunder Monetag sendrow.my.id -->
+    <script>(function(s){s.dataset.zone='10896976',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+
+      <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,5021460,4,6,200,40,00011111']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5021460&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
 </body>
 </html>
