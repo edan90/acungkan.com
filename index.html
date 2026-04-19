@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nonton Video</title>
+  <style>
+    body { margin:0; background:#000; display:flex; justify-content:center; align-items:center; height:100vh; font-family:Arial }
+    .play-wrap { position:relative; text-align:center; cursor:pointer }
+    .play-wrap img { width:90%; max-width:400px; border-radius:12px }
+    .play-btn { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-size:70px; color:#fff; background:rgba(0,0,0,0.6); border-radius:50%; padding:5px 25px }
+    .judul { color:white; margin-top:15px; font-size:18px }
+    video { position:fixed; top:0; left:0; width:100%; height:100%; object-fit:cover; display:none; background:#000 }
+  </style>
+</head>
+<body>
+  <div class="play-wrap" onclick="playVid()">
+    <img src="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg" alt="Thumbnail">
+    <div class="play-btn">▶</div>
+    <div class="judul">Klik untuk Play Video</div>
+  </div>
+
+  <video id="vid" controls playsinline>
+    <source src="video24.mp4" type="video/mp4">
+  </video>
+
+  <!-- KODE MONETAG NANTI TARO DISINI -->
+  
+  <script>
+    function playVid() {
+      let v = document.getElementById('vid');
+      v.style.display = 'block';
+      v.play();
+      if (v.requestFullscreen) v.requestFullscreen();
+      else if (v.webkitRequestFullscreen) v.webkitRequestFullscreen();
+    }
+  </script>
+</body>
+</html>
